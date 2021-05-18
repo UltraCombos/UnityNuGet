@@ -34,6 +34,7 @@ namespace UnityNuGet
         private readonly SourceRepository _sourceRepository;
         private static readonly Version Version200 = new Version(2, 0, 0, 0);
         private static readonly NuGetFramework NuGetFrameworkNetStandard20 = NuGetFramework.Parse("netstandard2.0");
+        private static readonly NuGetFramework NuGetFrameworkAny = NuGetFramework.Parse("any");
         private readonly SourceCacheContext _sourceCacheContext;
         private readonly Registry _registry;
         private readonly NpmPackageRegistry _npmPackageRegistry;
@@ -151,6 +152,18 @@ namespace UnityNuGet
                         {
                             netstd20Dependency = dependencySet;
                             break;
+                        }
+                    }
+
+                    if (netstd20Dependency == null)
+                    {
+                        foreach (var dependencySet in packageMeta.DependencySets)
+                        {
+                            if (dependencySet.TargetFramework == NuGetFrameworkAny)
+                            {
+                                netstd20Dependency = dependencySet;
+                                break;
+                            }
                         }
                     }
 
