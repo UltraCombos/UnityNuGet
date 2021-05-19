@@ -23,6 +23,7 @@ namespace UnityNuGet.Server
                         // Add the registry cache updater
                         services.AddHostedService<RegistryCacheUpdater>();
                         services.AddSingleton<RegistryCacheSingleton>();
+                        services.AddHealthChecks();
                     });
                     webBuilder.UseStartup<Startup>();
                 });
