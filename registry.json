@@ -275,7 +275,7 @@
     "version": "4.5.0"
   },
   "System.Numerics.Vectors": {
-    "listed": false,
+    "listed": true,
     "version": "4.4.0"
   },
   "System.Reflection.Emit.ILGeneration": {
