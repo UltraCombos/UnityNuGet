@@ -30,7 +30,7 @@ namespace UnityNuGet.Server
         {
             var loggerRedirect = new NuGetRedirectLogger(loggerFactory.CreateLogger("NuGet"));
 
-            string url = "https://unitynuget-registry.azurewebsites.net/";
+            string url = "http://nas.ultracombos.com:4875/";
 
             bool isDevelopment = hostEnvironment.IsDevelopment();
             if (isDevelopment)
