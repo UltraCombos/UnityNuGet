@@ -23,6 +23,10 @@
     "listed": true,
     "version": "2.0.0"
   },
+  "Google.Protobuf": {
+    "listed": true,
+    "version": "3.11.2"
+  },
   "MessagePack": {
     "listed": true,
     "version": "2.1.80"
@@ -44,7 +48,7 @@
   },
   "Microsoft.AspNetCore.Connections.Abstractions": {
     "listed": true,
-    "version": "2.1.0"
+    "version": "1.0.0"
   },
   "Microsoft.AspNetCore.Http.Connections.Client": {
     "listed": true,
@@ -261,6 +265,10 @@
   "System.Diagnostics.EventLog": {
     "listed": true,
     "version": "4.5.0"
+  },
+  "System.Drawing.Common": {
+    "listed": true,
+    "version": "4.7.0"
   },
   "System.Formats.Asn1": {
     "listed": true,
